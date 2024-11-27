@@ -1,3 +1,11 @@
 body {
   background-color: aqua;
 }
+.title {
+  display: inline;
+  /* color: green; */
+}
+.ocultar {
+  display: none;
+  /* color: crimson; */
+}

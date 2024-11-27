@@ -268,13 +268,35 @@
 //   name: "alex",
 //   lastName: "oviedo",
 // };
-// console.log(obj.name);
-const main = document.getElementById("saludos");
-console.log(main);
+// // console.log(obj.name);
+// const main = document.getElementById("saludos");
+// console.log(main);
 
-const h1 = document.querySelector("h1");
-console.log(h1.innerHTML);
+// const h1 = document.querySelector("h1");
+// console.log(h1.innerHTML);
 
-h1.innerHTML = "yo ya no soy un verdadero titulo";
-console.dir(h1);
-h1.innerText = "yo volvi a ser un titulo";
+// h1.innerHTML = "yo ya no soy un verdadero titulo";
+// console.dir(h1);
+// h1.innerText = "yo volvi a ser un titulo";
+
+const boton = document.querySelector("#boton");
+// boton.addEventListener("click", () => {
+//   console.log("hazme un click ");
+// });
+
+// boton.addEventListener("click", clickenboton);
+// const titulo = document.querySelector(".title");
+// const th2 = document.querySelector(".h2");
+// console.log(titulo);
+// // titulo = document.querySelector("h1");
+// const botontogle = () => {
+//   titulo.classList.toggle("ocultar");
+//   th2.classList.toggle("ocultar");
+// };
+// boton.addEventListener("click", botontogle);
+// boton.addEventListener("click", clickenboton);
+const parrafo = document.querySelector(".info");
+const botontogle = () => {
+  parrafo.classList.toggle("ocultar");
+};
+boton.addEventListener("click", botontogle);
