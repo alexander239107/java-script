@@ -6,6 +6,14 @@ body {
   /* color: green; */
 }
 .ocultar {
-  display: none;
-  /* color: crimson; */
+  /* display: none; */
+  color: blue;
+}
+#boton {
+  width: 155px;
+  height: 25px;
+}
+.parrafo_card {
+  color: greenyellow;
+  font-size: 1rem;
 }

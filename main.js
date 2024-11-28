@@ -293,10 +293,20 @@ const boton = document.querySelector("#boton");
 //   titulo.classList.toggle("ocultar");
 //   th2.classList.toggle("ocultar");
 // };
-// boton.addEventListener("click", botontogle);
+// // boton.addEventListener("click", botontogle);
 // boton.addEventListener("click", clickenboton);
 const parrafo = document.querySelector(".info");
-const botontogle = () => {
+const parra2 = document.querySelector(".info2");
+const pipi = () => {
+  // parrafo.classList.toggle("ocultar");
   parrafo.classList.toggle("ocultar");
+  parra2.classList.toggle("ocultar");
 };
-boton.addEventListener("click", botontogle);
+boton.addEventListener("click", pipi);
+
+const leer = document.querySelector("#input");
+const hola = () => {
+  console.log("soy un focus");
+  leer.style.backgroundColor = "red";
+};
+leer.addEventListener("focus", hola);
