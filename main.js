@@ -279,44 +279,57 @@
 // console.dir(h1);
 // h1.innerText = "yo volvi a ser un titulo";
 
+const apretar = document.querySelector("#boton");
+const clikea = () => {
+  console.log("click en el boton ");
+};
+apretar.addEventListener("click", clikea);
 
-const apretar = document.querySelector("#boton")
-const clikea = () =>{
-  console.log("click en el boton "); 
-}
-apretar.addEventListener("click",clikea)
-
-cambiarh1 = document.querySelector("#h1")
+cambiarh1 = document.querySelector("#h1");
 const cambioh1 = () => {
- cambiarh1.classList.toggle("ocultar")
- console.log("ocultar el h1");
-}
-apretar.addEventListener("click",cambioh1)
+  cambiarh1.classList.toggle("ocultar");
+  console.log("ocultar el h1");
+};
+apretar.addEventListener("click", cambioh1);
 
-const input = document.querySelector(".input")
-const funcionfocus =() =>{
+const input = document.querySelector(".input");
+const funcionfocus = () => {
   console.log("yo soy un focus");
-  input.style.backgroundColor ="crimson"
-}
-input.addEventListener("focus",funcionfocus)
+  input.style.backgroundColor = "crimson";
+};
+input.addEventListener("focus", funcionfocus);
 
 const funcionblur = () => {
   console.log("soy blur");
-  input.style.backgroundColor = "yellow"
-}
-input.addEventListener("blur",funcionblur)
+  input.style.backgroundColor = "yellow";
+};
+input.addEventListener("blur", funcionblur);
 
-const funcionchange = () =>{
+const funcionchange = () => {
   console.log("soy un change");
-  input.style.border ="10px aqua solid"
-}
-input.addEventListener("change",funcionchange)
+  input.style.border = "10px aqua solid";
+};
+input.addEventListener("change", funcionchange);
 
-const resetinput = document.querySelector(".reset")
-const resetear = () =>{
-  console.log("vamos a resetear todo")
-  input.style.backgroundColor = "white"
-  input.style.border="none"
-  input.value =" "
-}
-resetinput.addEventListener("click",resetear)
+const resetinput = document.querySelector(".reset");
+const resetear = () => {
+  console.log("vamos a resetear todo");
+  input.style.backgroundColor = "white";
+  input.style.border = "none";
+  input.value = " ";
+};
+resetinput.addEventListener("click", resetear);
+
+const desactivar = document.querySelector("#desactivar");
+
+const remove = () => {
+  console.log("esto es desactivar");
+
+  apretar.removeEventListener("click", cambioh1);
+  input.removeEventListener("focus", funcionfocus);
+  input.removeEventListener("blur", funcionblur);
+  input.removeEventListener("change", funcionchange);
+  resetinput.removeEventListener("click", resetear);
+};
+
+desactivar.addEventListener("click", remove);
