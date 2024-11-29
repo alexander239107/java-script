@@ -279,34 +279,44 @@
 // console.dir(h1);
 // h1.innerText = "yo volvi a ser un titulo";
 
-const boton = document.querySelector("#boton");
-// boton.addEventListener("click", () => {
-//   console.log("hazme un click ");
-// });
 
-// boton.addEventListener("click", clickenboton);
-// const titulo = document.querySelector(".title");
-// const th2 = document.querySelector(".h2");
-// console.log(titulo);
-// // titulo = document.querySelector("h1");
-// const botontogle = () => {
-//   titulo.classList.toggle("ocultar");
-//   th2.classList.toggle("ocultar");
-// };
-// // boton.addEventListener("click", botontogle);
-// boton.addEventListener("click", clickenboton);
-const parrafo = document.querySelector(".info");
-const parra2 = document.querySelector(".info2");
-const pipi = () => {
-  // parrafo.classList.toggle("ocultar");
-  parrafo.classList.toggle("ocultar");
-  parra2.classList.toggle("ocultar");
-};
-boton.addEventListener("click", pipi);
+const apretar = document.querySelector("#boton")
+const clikea = () =>{
+  console.log("click en el boton "); 
+}
+apretar.addEventListener("click",clikea)
 
-const leer = document.querySelector("#input");
-const hola = () => {
-  console.log("soy un focus");
-  leer.style.backgroundColor = "red";
-};
-leer.addEventListener("focus", hola);
+cambiarh1 = document.querySelector("#h1")
+const cambioh1 = () => {
+ cambiarh1.classList.toggle("ocultar")
+ console.log("ocultar el h1");
+}
+apretar.addEventListener("click",cambioh1)
+
+const input = document.querySelector(".input")
+const funcionfocus =() =>{
+  console.log("yo soy un focus");
+  input.style.backgroundColor ="crimson"
+}
+input.addEventListener("focus",funcionfocus)
+
+const funcionblur = () => {
+  console.log("soy blur");
+  input.style.backgroundColor = "yellow"
+}
+input.addEventListener("blur",funcionblur)
+
+const funcionchange = () =>{
+  console.log("soy un change");
+  input.style.border ="10px aqua solid"
+}
+input.addEventListener("change",funcionchange)
+
+const resetinput = document.querySelector(".reset")
+const resetear = () =>{
+  console.log("vamos a resetear todo")
+  input.style.backgroundColor = "white"
+  input.style.border="none"
+  input.value =" "
+}
+resetinput.addEventListener("click",resetear)
