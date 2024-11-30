@@ -1,0 +1,46 @@
+
+body{
+    background-color: black;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+h3{
+    
+    color: white;
+    font-size: 100px;
+}
+
+ .boton{
+    display: flex;
+height: 80px;
+    gap: 100px;
+ }
+ .boton button{
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    font-size: 25px;
+    color: white; 
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: aqua solid 200px;
+ }
+ .boton-reset{
+       width: 180px;
+    height: 50px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+ }
