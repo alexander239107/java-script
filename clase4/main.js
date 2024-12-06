@@ -10,3 +10,12 @@ let objetomodelo = {
 };
 console.log("objeto modelo");
 console.log(objetomodelo);
+
+let objetojson = JSON.stringify(objetomodelo);
+
+console.log("objeto en json ");
+console.log(objetoenJSON);
+
+let objetoparseado = JSON.parse(objetoenJSON);
+console.log("objeto parseado");
+console.log(objetoparseado);
